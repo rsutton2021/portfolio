@@ -1,0 +1,30 @@
+/*=================================
+---------General Styles------------
+=================================*/
+
+*, *::before, *::after  {
+    box-sizing: border-box;
+    
+  }
+
+:root {
+    --darkgreen: rgba(0, 64, 7, .95);
+    --gold: rgba(218, 165, 32, 1)
+}
+
+body {
+    margin: 0;
+    background: #222;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/*=================================
+------------Nav Styles-------------
+=================================*/
+
+.logo {
+    color: var(--gold);
+    font-family: 'Audiowide', cursive;
+}
+
