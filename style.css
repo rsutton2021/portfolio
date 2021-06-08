@@ -8,7 +8,7 @@
   }
 
 :root {
-    --darkgreen: rgba(0, 64, 7, .95);
+    --darkgreen: rgba(0, 64, 7, .20);
     --gold: rgba(218, 165, 32, 1);
     --white: #fff;
     --black: #000;
@@ -16,7 +16,7 @@
 
 body {
     margin: 0;
-    background: #222;
+    background: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -163,7 +163,35 @@ nav a:hover {
     }
 }
 
+/*=================================
+-----------Home Styles-------------
+=================================*/
 
+.home {
+    height: 100vh;
+    background-image: url('./images/WastwaterMistV1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*=================================
+-----------About Styles------------
+=================================*/
+
+/*=================================
+----------Projects Styles----------
+=================================*/
+
+
+/*=================================
+----------Skills Styles------------
+=================================*/
+
+/*=================================
+----------Contact Styles-----------
+=================================*/
 
 
 
