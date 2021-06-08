@@ -172,16 +172,19 @@ nav a:hover {
     display: grid;
     place-content: center;
     text-align: center;
-    background-image: url('./images/WastwaterMistV1.jpg');
+    /*background-image: url('./images/WastwaterMistV1.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover; */
+    background: #fff;
+    color: aqua;
+        
 }
 
-.home h1 {
+.home h1 {    
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
     position: relative;
-    font-family: 'Roboto Mono', monospace;    
+    font-family: 'Roboto Mono', monospace;        
 }
 
 .home h1::before,
