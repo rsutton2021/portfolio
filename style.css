@@ -82,13 +82,8 @@ nav ul {
 }
 
 nav li {
-    margin-bottom: 1em;    
-    padding-left: 1em;
-}
-
-nav li:hover {    
-    color: var(--darkgreen);
-    background: var(--white);
+    margin-bottom: 0.75em;    
+    margin-left: 1em;
 }
 
 nav a {
@@ -101,8 +96,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--darkgreen);
-    background: var(--white);    
+    color: var(--gold);        
 }
 
 .nav-toggle:checked ~ nav {
@@ -121,19 +115,20 @@ nav a:hover {
 
     header {
         display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        grid-template-columns: 1fr auto minmax(600px, 3fr);
     }
 
     .logo {
-        grid-column: 2 / 3;
+        grid-column: 1 / 2;
     }
 
     nav {
         all: unset;
-        grid-column: 3 / 4;
+        grid-column: 2 / 4;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        margin-right: 2em;
     }
 
     nav ul {
@@ -141,7 +136,7 @@ nav a:hover {
     }
 
     nav li {
-        margin-left: 3em;
+        margin-left: 2em;
         margin-bottom: 0;
     }
 
