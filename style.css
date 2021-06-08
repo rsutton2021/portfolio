@@ -169,11 +169,56 @@ nav a:hover {
 
 .home {
     height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
     background-image: url('./images/WastwaterMistV1.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;    
 }
+
+.home h1 {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: 'Roboto Mono', monospace;    
+}
+
+.home h1::before,
+h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.home h1::before {
+    background: #fff;
+    animation: typewriter 4 s steps(17) 1s forwards;    
+}
+
+.home h1::after {
+    width: 0.125em;
+    background: #000;
+    animation: typewriter 4s steps(17) 1s forwards, blink 0.75s steps(17) infinite;
+}
+
+
+@keyframes typewriter {
+    to {
+        left: 100%
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }    
+}
+
+
 
 
 /*=================================
