@@ -173,16 +173,23 @@ nav a:hover {
     display: grid;
     place-content: center;
     text-align: center;
+    background: rgba(252, 252, 252, 0);
+    /*background-blend-mode: lighten;*/
     background-image: url('./images/WastwaterMistV1.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-       
-    /*
-    animation: fadebackground ease-in 2s;
-    */
-              
+    background-size: cover;    
+    /*animation: fadebackground 6s backwards;
+    animation-timing-function: ease-in steps(20);*/
+                  
 }
+
+.home::before {
+    height: 100vh;
+    position: absolute;
+    background: #fff;
+}
+
 
 
 
@@ -214,9 +221,10 @@ h1::after {
 }
 
 @keyframes fadebackground {
-    from {background: #fff;}
-    to {
-
+    from {background: rgba(252, 252, 252, 1);}
+    to {background: rgba(252, 252, 252, 0.6);
+        /*background-blend-mode: normal;*/
+        
     }
 }
 
