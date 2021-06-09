@@ -30,7 +30,7 @@ body {
 =================================*/
 
 .logo {
-    color: var(--mid2);
+    color: var(--mid1);
     font-family: 'Audiowide', cursive;
     font-size: 1.5rem;
 }
@@ -55,7 +55,7 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
-    color: var(--white);
+    color: var(--light1);
 }
 
 .nav-toggle-label span {    
@@ -91,7 +91,7 @@ nav li {
 }
 
 nav a {
-    color: var(--white);
+    color: var(--light1);
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -100,7 +100,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--mid2);        
+    color: var(--light2);        
 }
 
 .nav-toggle:checked ~ nav {
@@ -153,7 +153,7 @@ nav a:hover {
         content: '';
         display: block;
         height: 5px;
-        background: var(--mid2);
+        background: var(--light2);
         position: absolute;
         top: -.75em;
         left: 0;
