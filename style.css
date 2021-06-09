@@ -172,13 +172,10 @@ nav a:hover {
     display: grid;
     place-content: center;
     text-align: center;
-    /*background-image: url('./images/WastwaterMistV1.jpg');
+    background-image: url('./images/WastwaterMistV1.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
-    background: #fff;
-    color: aqua;
-        
+    background-size: cover;             
 }
 
 .home h1 {    
