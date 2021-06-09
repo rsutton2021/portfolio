@@ -8,8 +8,12 @@
   }
 
 :root {
-    --darkgreen: rgba(0, 64, 7, .20);
-    --gold: rgba(218, 165, 32, 1);
+    --dark: rgba(10, 18, 42, 1);
+    --mid1: rgba(20, 106, 153, 1);
+    --mid2: rgba(255, 82, 27, 1);
+    --mid3: rgba(163, 187, 173, 1);
+    --light1: rgba(229, 235, 234, 1);
+    --light2: rgba(255, 207, 153, 1);
     --white: #fff;
     --black: #000;
 }
@@ -26,13 +30,13 @@ body {
 =================================*/
 
 .logo {
-    color: var(--gold);
+    color: var(--mid2);
     font-family: 'Audiowide', cursive;
     font-size: 1.5rem;
 }
 
 header {
-    background: var(--darkgreen);
+    background: var(--dark);
     text-align: center;
     position: fixed;
     z-index: 10;
@@ -54,12 +58,12 @@ header {
     color: var(--white);
 }
 
-nav-toggle-label span {    
+.nav-toggle-label span {    
     font-size: 1.5rem;
 }
 
 .nav-toggle-label span:hover {
-    color: var(--gold);
+    color: var(--mid2);
     cursor: pointer;
 }
 
@@ -68,7 +72,7 @@ nav {
     text-align: left;
     top: 100%;
     left: 0;
-    background: var(--darkgreen);
+    background: var(--dark);
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
@@ -96,7 +100,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--gold);        
+    color: var(--mid2);        
 }
 
 .nav-toggle:checked ~ nav {
@@ -149,7 +153,7 @@ nav a:hover {
         content: '';
         display: block;
         height: 5px;
-        background: var(--gold);
+        background: var(--mid2);
         position: absolute;
         top: -.75em;
         left: 0;
@@ -223,8 +227,7 @@ h1::after {
 
 .subtitle {
     color: rgba(0, 0, 0, 1);
-    font-size: 1.5rem;
-    
+    font-size: 1.5rem;    
     font-weight: 400;
     opacity: 0;
     transform: translateY(3rem);
@@ -256,12 +259,17 @@ h1::after {
     }
 }
 
-
-
-
 /*=================================
 -----------About Styles------------
 =================================*/
+
+.about {
+    height: 100vh;
+    margin: 1rem 1rem;
+    display: grid;
+    grid-template-columns: minmax(10rem, 1fr);
+}
+
 
 /*=================================
 ----------Projects Styles----------
