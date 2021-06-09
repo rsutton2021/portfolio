@@ -174,10 +174,8 @@ nav a:hover {
     display: grid;
     place-content: center;
     text-align: center;    
-    color: rgba(0, 0, 0, 1);
-
-    
-    animation: fadebackground 4s forwards;
+    color: rgba(0, 0, 0, 1);    
+    animation: fadeBackground 4s forwards;
     animation-delay: 4.75s;
     
 }
@@ -191,15 +189,12 @@ nav a:hover {
     background-image: url('./images/WastwaterMistV1.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;    
-    /*animation: fadebackground 6s backwards;
-    animation-timing-function: ease-in steps(20);*/
-                  
+    background-size: cover;                     
 }
 
 
 .home h1 {    
-    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    font-size: clamp(1rem, 3vw + 1.5rem, 4rem);
     position: relative;
     font-family: 'Roboto Mono', monospace;
     
@@ -226,7 +221,17 @@ h1::after {
     animation: typewriter 4s steps(17) 1s forwards, blink 0.75s steps(17) infinite;
 }
 
-@keyframes fadebackground {
+.subtitle {
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.5rem;
+    
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: subtitleFadeInUp 2s ease 6s forwards;
+}
+
+@keyframes fadeBackground {
     from {background: rgb(255, 255, 255, 1)}
     to {background: rgba(255, 255, 255, 0)}
 }
@@ -242,6 +247,13 @@ h1::after {
     to {
         background: transparent;
     }    
+}
+
+@keyframes subtitleFadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
