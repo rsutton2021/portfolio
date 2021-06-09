@@ -167,14 +167,27 @@ nav a:hover {
 -----------Home Styles-------------
 =================================*/
 
+.backgroundmask {
+    background:rgba(255, 255, 255, 1);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    text-align: center;    
+    color: rgba(0, 0, 0, 1);
+
+    
+    animation: fadebackground 4s forwards;
+    animation-delay: 4.75s;
+    
+}
+
 .home {
     height: 100vh;
     position: relative;
     display: grid;
     place-content: center;
     text-align: center;
-    background: rgba(252, 252, 252, 0);
-    /*background-blend-mode: lighten;*/
     background-image: url('./images/WastwaterMistV1.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -184,19 +197,12 @@ nav a:hover {
                   
 }
 
-.home::before {
-    height: 100vh;
-    position: absolute;
-    background: #fff;
-}
-
-
-
 
 .home h1 {    
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
     position: relative;
-    font-family: 'Roboto Mono', monospace;        
+    font-family: 'Roboto Mono', monospace;
+    
 }
 
 .home h1::before,
@@ -221,11 +227,8 @@ h1::after {
 }
 
 @keyframes fadebackground {
-    from {background: rgba(252, 252, 252, 1);}
-    to {background: rgba(252, 252, 252, 0.6);
-        /*background-blend-mode: normal;*/
-        
-    }
+    from {background: rgb(255, 255, 255, 1)}
+    to {background: rgba(255, 255, 255, 0)}
 }
 
 
