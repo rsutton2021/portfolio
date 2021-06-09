@@ -169,14 +169,22 @@ nav a:hover {
 
 .home {
     height: 100vh;
+    position: relative;
     display: grid;
     place-content: center;
     text-align: center;
     background-image: url('./images/WastwaterMistV1.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;             
+    background-size: cover;
+       
+    /*
+    animation: fadebackground ease-in 2s;
+    */
+              
 }
+
+
 
 .home h1 {    
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
@@ -195,14 +203,21 @@ h1::after {
 }
 
 .home h1::before {
-    background: #fff;
-    animation: typewriter 4 s steps(17) 1s forwards;    
+    background: #fff;    
+    animation: typewriter 4s steps(17) 1s forwards;    
 }
 
 .home h1::after {
     width: 0.125em;
     background: #000;
     animation: typewriter 4s steps(17) 1s forwards, blink 0.75s steps(17) infinite;
+}
+
+@keyframes fadebackground {
+    from {background: #fff;}
+    to {
+
+    }
 }
 
 
