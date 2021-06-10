@@ -301,16 +301,28 @@ h1::after {
 ----------Projects Styles----------
 =================================*/
 
+.projects {
+    min-height: 100vh;
+    background: var(--dark);
+}
 
 /*=================================
 ----------Skills Styles------------
 =================================*/
 
+.skills {
+    min-height: 100vh;
+    background: var(--light1);
+}
+
 /*=================================
 ----------Contact Styles-----------
 =================================*/
 
-
+.contact {
+    min-height: 100vh;
+    background: var(--mid3);
+}
 
 
 
