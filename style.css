@@ -112,6 +112,11 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
+.nav-toggle:target ~ nav a {
+    opacity: 0;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
 @media screen and (min-width: 800px) {
     .nav-toggle-label {
         display: none;
