@@ -25,6 +25,12 @@ body {
     font-weight: 400;
 }
 
+h2 {
+    color: var(--dark);
+    font-size: 1.75rem;
+    text-align: center;
+}
+
 /*=================================
 ------------Nav Styles-------------
 =================================*/
@@ -276,15 +282,9 @@ h1::after {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 50px;
     display: grid;
     background: var(--light1);    
-}
-
-.about h2 {
-    color: var(--dark);
-    font-size: 1.75rem;
-    text-align: center;
 }
 
 .about img {
@@ -367,7 +367,12 @@ h1::after {
 =================================*/
 
 .projects {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 40px;
+    padding-top: 50px;    
     min-height: 100vh;
+    display: grid;
     background: var(--mid2);
 }
 
