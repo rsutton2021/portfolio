@@ -388,6 +388,8 @@ h1::after {
     height: 270px;
     background: var(--light2);
     position: relative;
+    border-radius: 10px;
+    
 }
 
 .projects-card::before {
@@ -399,6 +401,7 @@ h1::after {
     z-index: 2;
     transition: opacity 0.5s;
     opacity: 0;
+    border-radius: 10px;
 }
 
 .projects-card:hover::before {
@@ -410,6 +413,7 @@ h1::after {
     height: 100%;
     object-fit: cover;
     position: absolute;    
+    border-radius: 10px;
 }
 
 .projects-info {
@@ -450,6 +454,68 @@ h1::after {
     font-weight: bold;
 }
 
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 5px #444;
+    z-index: 20;
+    background: var(--light1);
+    color: var(--dark);
+    text-align: left;
+    width: 80%;
+    height: 90%;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.popup-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.popup-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.popup-body {
+    padding: 10px 15px;
+}
+
+#popup-overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#popup-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
 /*=================================
 ----------Skills Styles------------
 =================================*/
