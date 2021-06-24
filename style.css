@@ -31,6 +31,7 @@ h2 {
     text-align: center;
 }
 
+
 /*=================================
 ------------Nav Styles-------------
 =================================*/
@@ -456,7 +457,7 @@ h1::after {
 
 .popup {
     position: fixed;
-    top: 48%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: 200ms ease-in-out;
@@ -467,7 +468,7 @@ h1::after {
     color: var(--dark);
     text-align: left;
     width: 80%;
-    height: 70%;
+    height: 75%;
 }
 
 .popup.active {
@@ -500,6 +501,19 @@ h1::after {
     padding: 10px 15px;
 }
 
+.popup-body p {    
+    font-size: 1rem;
+}
+
+.popup-body-dt {    
+    padding: 10px 15px; 
+    display: none;
+}
+
+.popup-body-dt p {
+    font-size: 1rem;
+}
+
 #popup-overlay {
     position: fixed;
     opacity: 0;
@@ -516,6 +530,18 @@ h1::after {
     opacity: 1;
     pointer-events: all;
 }
+
+@media screen and (min-width: 700px) {
+    .popup-body {
+        display: none;
+    }
+
+    .popup-body-dt {
+        display: block;
+    }
+}
+
+
 /*=================================
 ----------Skills Styles------------
 =================================*/
