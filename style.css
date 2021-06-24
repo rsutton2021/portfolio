@@ -427,24 +427,24 @@ h1::after {
     text-align: center;
     display: grid;
     place-content: center;
-    opacity: 0;
+    
     transition: opacity 0.5s ease-in;
 
 }
-
+ 
 .projects-info:hover {
-    opacity: 1;
-}
+    
+} 
 
 .projects-info h3 {    
     font-size: 1.75rem;    
 }
 
-.projects p {
+.projects-info p {
     font-size: 1.5rem;
 }
 
-.projects button {
+.projects-info button {
     text-decoration: none;
     border: none;
     padding: 10px 5px;
@@ -453,6 +453,7 @@ h1::after {
     font-size: 1.5rem;
     border-radius: 3px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .popup {

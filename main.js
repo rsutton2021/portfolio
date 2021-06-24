@@ -10,19 +10,20 @@ function toggle() {
 ======== PROJECTS INFO POPUP ==========
 =====================================*/
 
-const openPopupButtons = document.querySelectorAll('[data-modal-target]');
+const openPopupButtons = document.querySelectorAll('[data-popup-target]');
 const closePopupButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('popup-overlay');
 
 openPopupButtons.forEach (button => {
     button.addEventListener('click', () => {
-        const popup = document.querySelector(button.dataset.modalTarget)
-        openModal(popup)
+        const popup = document.querySelector(button.dataset.popupTarget)
+        openPopup(popup)
+        console.log('test');
     })
 });
 
 overlay.addEventListener('click', () => {
-    const popups = document.querySelectorAll('.modal.active')
+    const popups = document.querySelectorAll('.popup.active')
     popups.forEach(popup => {
         closePopupButtons(popup)
     })
