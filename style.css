@@ -531,7 +531,7 @@ h1::after {
     pointer-events: all;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
     .popup-body {
         display: none;
     }
