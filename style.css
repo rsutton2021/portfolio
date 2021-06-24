@@ -371,12 +371,12 @@ h1::after {
     padding-right: 1rem;
     padding-bottom: 40px;
     padding-top: 50px;    
-    min-height: 100vh;
+    min-height: 100vh;    
     display: grid;
     grid-gap: 1em;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-template-rows: 70px auto;
-    background: var(--mid2);
+    background: var(--mid2);    
 }
 
 .projects h2 {
@@ -427,7 +427,7 @@ h1::after {
     display: grid;
     place-content: center;
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 0.5s ease-in;
 
 }
 
@@ -456,18 +456,18 @@ h1::after {
 
 .popup {
     position: fixed;
-    top: 50%;
+    top: 48%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(1);
     transition: 200ms ease-in-out;
     border-radius: 5px;
     box-shadow: 0 0 20px 5px #444;
-    z-index: 20;
+    z-index: 100;
     background: var(--light1);
     color: var(--dark);
     text-align: left;
     width: 80%;
-    height: 90%;
+    height: 70%;
 }
 
 .popup.active {
