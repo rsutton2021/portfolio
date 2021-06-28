@@ -433,7 +433,7 @@ h1::after {
 }
  
 .projects-info:hover {
-    
+   opacity: 1; 
 } 
 
 .projects-info h3 {    
