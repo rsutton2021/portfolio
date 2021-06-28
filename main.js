@@ -17,8 +17,7 @@ const overlay = document.getElementById('popup-overlay');
 openPopupButtons.forEach(button => {
     button.addEventListener('click', () => {
         const popup = document.querySelector(button.dataset.popupTarget)
-        openPopup(popup)
-        console.log('test1')
+        openPopup(popup)        
     })
 });
 
