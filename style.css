@@ -427,7 +427,7 @@ h1::after {
     text-align: center;
     display: grid;
     place-content: center;
-    
+    opacity: 0;
     transition: opacity 0.5s ease-in;
 
 }
