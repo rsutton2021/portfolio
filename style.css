@@ -481,7 +481,7 @@ h1::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--dark);
 }
 
 .popup-header .title {
@@ -495,7 +495,13 @@ h1::after {
     outline: none;
     background: none;
     font-size: 1.25rem;
-    font-weight: bold;
+    font-weight: bold;    
+}
+
+.popup-header .close-button:hover {
+    background: var(--mid2);
+    color: var(--light1);
+    border-radius: 50%;
 }
 
 .popup-body {
