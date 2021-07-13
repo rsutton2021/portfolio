@@ -13,6 +13,7 @@ function toggle() {
 const openPopupButtons = document.querySelectorAll('[data-popup-target]');
 const closePopupButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('popup-overlay');
+/* const popupEsc = document.querySelectorAll('[class^="popup"]'); */
 
 openPopupButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -26,7 +27,16 @@ closePopupButtons.forEach(button => {
         const popup = button.closest('.popup')
         closePopup(popup)
     })
+        
 });
+
+/* Second attempt to add Escape button function to close popup - doesn't work */
+/* popupEsc.forEach(escape => {
+    escape.addEventListener('Escape', () => {
+        const popup = escape.closest('.popup')
+        closePopup(popup)
+    })
+}) */
 
 function openPopup(popup) {
     if (popup === null) return
@@ -39,3 +49,13 @@ function closePopup(popup) {
     popup.classList.remove('active')
     overlay.classList.remove('active')
 }
+
+/* First attempt to add Escape button function to close popup - doesn't work */
+/* document.onkeydown = function(event) {
+    if(event.key === 'Escape') {
+        overlay.classList.remove('active');
+        popupEsc.classList.remove('active');
+        console.log('Escape Function Test');
+    }
+}; */
+
