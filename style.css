@@ -31,7 +31,6 @@ h2 {
     text-align: center;
 }
 
-
 /*=================================
 ------------Nav Styles-------------
 =================================*/
@@ -469,7 +468,17 @@ h1::after {
     color: var(--dark);
     text-align: left;
     width: 80%;
-    height: 75%;
+    height: fit-content;    
+}
+
+.popup a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.popup a:hover {
+    text-decoration: underline;
 }
 
 .popup.active {
@@ -518,10 +527,6 @@ h1::after {
 }
 
 .popup-body-dt {    
-    padding: 10px 15px;
-    height: 100%;    
-    flex-direction: column;    
-    background:var(--light1);
     display: none;
 }
 
@@ -544,8 +549,7 @@ h1::after {
 
 #popup-overlay.active {
     opacity: 1;        
-    pointer-events: all;
-    
+    pointer-events: all;    
 }
 
 .popup-button-container {
@@ -560,6 +564,7 @@ h1::after {
     text-decoration: none;
     border: none;
     margin-left: 1rem;
+    margin-top: 1rem;
     padding: 10px;
     background: var(--mid2);
     color: var(--dark);
@@ -575,12 +580,47 @@ h1::after {
 }
 
 @media screen and (min-width: 800px) {
+          
     .popup-body {
         display: none;
     }
 
     .popup-body-dt {
-        display: flex;
+        display: inline;
+        /* padding: 10px 15px; */        
+        /* height: 100%; */ 
+        /* flex-direction: column; */    
+        background:var(--light1);
+        
+    }
+
+    .popup-body-dt p {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 0.5rem;
+    }
+
+    .popup-body-dt img {
+        all: unset;
+        margin: 15px 15px;
+        width: 40%;
+        float: right;
+        transform: rotate(2deg);
+        box-shadow: 5px 5px 5px #aaa;
+    }
+
+    .popup-button-container {
+        display: flex;    
+        height: unset;
+        justify-content: right;
+        align-content: flex-end;
+        margin-top: 15px;    
+    }
+
+    .popup-button-container button {
+        margin-left: 0;
+        margin-right: 15px;
+        margin-bottom: 15px;
     }
 }
 
