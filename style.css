@@ -31,6 +31,12 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    color: var(--dark);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 /*=================================
 ------------Nav Styles-------------
 =================================*/
@@ -642,6 +648,24 @@ h1::after {
     text-align: center;
     font-size: 6rem;
     color: var(--dark);
+    margin-top: 0;
+}
+
+meter {
+    background: none;
+    background-image: linear-gradient(
+    90deg, 
+    #8bcf69 5%, 
+    #e6d450 5%,
+    #e6d450 15%,
+    #f28f68 15%,
+    #f28f68 55%,
+    #cf82bf 55%,
+    #cf82bf 95%,
+    #719fd1 95%,
+    #719fd1 100%
+  );
+    width: 50%;
 }
 
 
