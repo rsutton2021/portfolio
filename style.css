@@ -641,32 +641,43 @@ h1::after {
     padding-bottom: 40px;
     padding-top: 50px;
     min-height: 100vh;
-    background: var(--light1);
+    background: var(--light1);    
 }
 
-.skills p {
+.icons {
     text-align: center;
     font-size: 6rem;
     color: var(--dark);
     margin-top: 0;
 }
 
-meter {
-    background: none;
-    background-image: linear-gradient(
-    90deg, 
-    #8bcf69 5%, 
-    #e6d450 5%,
-    #e6d450 15%,
-    #f28f68 15%,
-    #f28f68 55%,
-    #cf82bf 55%,
-    #cf82bf 95%,
-    #719fd1 95%,
-    #719fd1 100%
-  );
-    width: 50%;
+.progress-course {
+    text-align: center;
+    color: var(--dark);
+    font-size: 1.25rem;
 }
+
+.progress-container {
+    position: relative;
+    margin: auto;    
+    background: var(--mid3);
+    height: 2rem;
+    width: 60%;
+}
+
+.progress-bar {
+    position: absolute;
+    background: var(--mid1);
+    width: 21%;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+    text-align: right;
+    color: var(--light1);
+    font-size: 1rem;
+    padding-top: 0.25rem;
+    padding-right: 0.25rem;
+}
+
 
 
 
