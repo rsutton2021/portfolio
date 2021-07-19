@@ -442,7 +442,8 @@ h1::after {
 } 
 
 .projects-info h3 {    
-    font-size: 1.75rem;    
+    font-size: 1.75rem;
+    color: var(--light1);    
 }
 
 .projects-info p {
@@ -649,6 +650,7 @@ h1::after {
     font-size: 6rem;
     color: var(--dark);
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .progress-course {
@@ -670,7 +672,7 @@ h1::after {
     background: var(--mid1);
     width: 21%;
     height: 100%;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 10px 10px 0;
     text-align: right;
     color: var(--light1);
     font-size: 1rem;
