@@ -680,10 +680,6 @@ h1::after {
     padding-right: 0.25rem;
 }
 
-
-
-
-
 /*=================================
 ----------Contact Styles-----------
 =================================*/
@@ -705,6 +701,14 @@ h1::after {
 
 .contact a:hover {
     color: var(--mid1);    
+}
+
+.speech {
+    text-align: center;
+    font-size: 15rem;
+    color: var(--mid1);
+    margin-top: -60px;
+    margin-bottom: -20px;
 }
 
 /*=================================
