@@ -689,6 +689,10 @@ h1::after {
 =================================*/
 
 .contact {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 40px;
+    padding-top: 50px;
     min-height: 100vh;
     background: var(--mid3);
     margin-bottom: 0;
