@@ -698,6 +698,15 @@ h1::after {
     margin-bottom: 0;
 }
 
+.contact a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.contact a:hover {
+    color: var(--mid1);    
+}
+
 /*=================================
 -----------Footer Styles-----------
 =================================*/
